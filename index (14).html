@@ -1,0 +1,222 @@
+<html>
+ <head>
+  <title>
+   Rara Store
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-pink-50">
+  <!-- Navbar -->
+  <nav class="bg-pink-100 shadow-md">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <div class="flex items-center">
+     <i class="fas fa-flower text-pink-700 text-2xl mr-2"></i>
+     <div class="relative">
+      <span class="text-xl font-bold text-pink-700">
+       Rara Store
+      </span>
+      <div class="absolute bottom-0 left-0 w-full h-1 bg-pink-300 rounded-full" style="height: 4px; background: linear-gradient(90deg, rgba(255,192,203,1) 0%, rgba(255,105,180,1) 100%);">
+      </div>
+     </div>
+    </div>
+    <div class="hidden md:flex space-x-4">
+     <a class="text-pink-700 hover:text-pink-900" href="#">
+      Home
+     </a>
+     <a class="text-pink-700 hover:text-pink-900" href="#">
+      About
+     </a>
+     <a class="text-pink-700 hover:text-pink-900" href="#">
+      Contact
+     </a>
+    </div>
+    <div class="md:hidden">
+     <button class="text-pink-700 focus:outline-none" id="menu-button">
+      <i class="fas fa-bars">
+      </i>
+     </button>
+    </div>
+   </div>
+   <div class="hidden md:hidden" id="menu">
+    <a class="block px-4 py-2 text-pink-700 hover:bg-pink-200" href="#">
+     About
+    </a>
+    <a class="block px-4 py-2 text-pink-700 hover:bg-pink-200" href="#">
+     Contact
+    </a>
+   </div>
+  </nav>
+  <!-- Search Bar -->
+  <div class="container mx-auto px-4 py-4">
+   <div class="relative">
+    <input class="w-full p-2 border border-pink-300 rounded-full pl-10" id="search-input" placeholder="Search for products..." type="text"/>
+    <button class="absolute left-0 top-0 mt-2 ml-3 text-pink-500" id="search-button">
+     <i class="fas fa-search">
+     </i>
+    </button>
+   </div>
+  </div>
+  <!-- Product List -->
+  <div class="container mx-auto px-4 py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+   <!-- Product 1 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 1, a stylish modern chair" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/pCWjX_4qKpMHfvTp4NTtFRAhH3uVNsVu8DwzilJ5V_A.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 1
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A stylish modern chair.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $99.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%201">
+     Order
+    </a>
+   </div>
+   <!-- Product 2 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 2, a sleek modern desk lamp" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/kKjj65PzA2g-d1XIoEvqhHGvnJNyDMYwOdB4l8c_Yl4.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 2
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A sleek modern desk lamp.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $49.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%202">
+     Order
+    </a>
+   </div>
+   <!-- Product 3 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 3, a comfortable ergonomic office chair" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/SLyeBMp05YnV7OxzBNrZo0KbQSNd0bvyoGOAxV3OndA.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 3
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A comfortable ergonomic office chair.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $199.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%203">
+     Order
+    </a>
+   </div>
+   <!-- Product 4 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 4, a modern minimalist bookshelf" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/MDmWYWVq6fbjf5DgHWckFin3Bhgs6zxpoYoIkxNO13E.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 4
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A modern minimalist bookshelf.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $149.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%204">
+     Order
+    </a>
+   </div>
+   <!-- Product 5 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 5, a stylish modern coffee table" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/qRks-DBmzA8wjvdNEpKNPkGEUuS-s8IY7H7iLFuAJbY.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 5
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A stylish modern coffee table.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $89.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%205">
+     Order
+    </a>
+   </div>
+   <!-- Product 6 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 6, a modern wall clock" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/zJ8mUFoj2kmdULYc_C0_VLhr25sj45VcmU4mMZYBz-o.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 6
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A modern wall clock.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $29.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%206">
+     Order
+    </a>
+   </div>
+   <!-- Product 7 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 7, a modern floor lamp" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/H1ZG0L7iu3cuf-6AcVClzTpSNFILXaZ5JcFRpuqN7JY.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 7
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A modern floor lamp.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $59.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%207">
+     Order
+    </a>
+   </div>
+   <!-- Product 8 -->
+   <div class="bg-white p-4 rounded-lg shadow-md flex flex-col">
+    <img alt="Image of Product 8, a modern dining table set" class="w-full h-48 object-cover rounded-md" height="300" src="https://storage.googleapis.com/a1aa/image/pj3aXyvyBmhlA_lC2g1SEdQ89U6waffZYmM4IaNCV_M.jpg" width="300"/>
+    <h2 class="text-lg font-bold mt-2 text-pink-700">
+     Product 8
+    </h2>
+    <p class="text-gray-700 mt-1">
+     A modern dining table set.
+    </p>
+    <p class="text-pink-900 font-bold mt-1">
+     $299.99
+    </p>
+    <a class="block text-center bg-pink-500 text-white py-2 mt-2 rounded-full mt-auto" href="https://wa.me/?text=I%20would%20like%20to%20order%20Product%208">
+     Order
+    </a>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-pink-100 shadow-md mt-8">
+   <div class="container mx-auto px-4 py-4 text-center">
+    <p class="text-pink-700">
+     Copyright ©️ Rio • Rara, 2025
+    </p>
+   </div>
+  </footer>
+  <script>
+   document.getElementById('menu-button').addEventListener('click', function() {
+            var menu = document.getElementById('menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        document.getElementById('search-button').addEventListener('click', function() {
+            var query = document.getElementById('search-input').value;
+            alert('Searching for: ' + query);
+        });
+  </script>
+ </body>
+</html>
